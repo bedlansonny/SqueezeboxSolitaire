@@ -15,8 +15,9 @@ public class SqueezeSolitaire
             for(int i = 1; i < 52; i++)
                 cards[i] = sc.next();
 
-
-
+            Game game = new Game(cards);
+            game.play();
+            System.out.println(game.output());
         }
     }
 }
